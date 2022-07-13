@@ -264,6 +264,7 @@ nav {
 .project-card {
     border: 1px solid var(--light-gray2);
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .project-content-wrapper {
