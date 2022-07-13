@@ -1,0 +1,312 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+/* CSS Color Pallete Variables */
+:root {
+    --black: #212121;
+    --gray: #757575;
+    --light-gray1: #ECECEC;
+    --light-gray2: #EEEEEE;
+    --blue: #2196F3;
+    --dark-bg: #2F303A;
+    --light-bg: #F5F4FA;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.section {
+    padding: 94px 0;
+}
+
+/* Nav & Header */
+
+header {
+    padding: 26px 0;
+    border: 1px solid var(--light-gray1);
+}
+
+.navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--blue);
+}
+
+.logo span {
+    color: var(--black);
+}
+
+.nav-items {
+    width: 50%;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items li a {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-items li a:hover {
+    color: var(--blue);
+}
+
+.active a {
+    color: var(--blue);
+}
+
+.contact-info {
+    width: 300px;
+    color: var(--gray);
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-info li{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.contact-info li a:hover{
+    color: var(--blue);
+}
+
+/* Heading section */
+.hero-wrapper {
+    background-color: var(--dark-bg);
+}
+
+.hero-section {
+    width: 100%;
+    padding: 200px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan {
+    color: white;
+    font-size: 44px;
+    /* width: 40%; */
+    text-align: center;
+}
+
+.hero-section button {
+    background-color: var(--blue);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.hero-section button:hover {
+    box-shadow: none;
+}
+
+.reasons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reason {
+    font-size: 14px;
+    width: 270px;
+}
+
+.reason-title {
+    font-weight: 700;
+    color: var(--black);
+}
+
+.reason-text {
+    color: var(--gray);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.padding-top-remover {
+    padding-top: 0px;
+}
+
+.our-professions {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.profession {
+    border: 1px solid black;
+}
+
+.profession img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.our-team-section {
+    background-color: var(--light-bg);
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.member-card {
+    background-color: white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.member-name {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.member-role {
+    font-size: 16px;
+    text-align: center;
+    color: var(--gray);
+}
+
+/* Portfolio Styling */
+
+.project-categories-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.project-categories-buttons button {
+    color: var(--black);
+    padding: 6px 26px;
+    margin: 0px 8px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    background-color: var(--light-bg);
+}
+
+.project-categories-buttons button.active {
+    background-color: var(--blue);
+    color: white;
+}
+
+.project-categories-buttons button:hover {
+    background-color: var(--blue);
+    color: white;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    border: 1px solid var(--light-gray2);
+    margin-bottom: 30px;
+}
+
+.project-content-wrapper {
+    padding: 0px 24px;
+}
+
+.project-name {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.project-category {
+    font-size: 16ppx;
+    color: var(--gray);
+}
+
+
+/* FOOTER */
+footer {
+    background-color: var(--dark-bg);
+    padding: 60px 0px;
+}
+
+.footer-content > a {
+    font-family: 'Raleway', sans-serif;
+    color: var(--blue);
+    font-size: 24px;
+}
+
+.footer-content > a span {
+    color: white;
+}
+
+.footer-content .address a {
+    color: var(--gray);
+    font-style: normal;
+}
+
+.business-details a {
+    color: var(--gray);
+    font-style: normal;
+}
+
+.footer-content .address a:hover, .business-details a:hover {
+    color: white;
+}
