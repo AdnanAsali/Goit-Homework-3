@@ -28,6 +28,7 @@ img {
     --light-gray1: #ECECEC;
     --light-gray2: #EEEEEE;
     --blue: #2196F3;
+    --active-blue: #188CE8;
     --dark-bg: #2F303A;
     --light-bg: #F5F4FA;
 }
@@ -54,11 +55,11 @@ header {
     justify-content: space-between;
 }
 
-nav {
+.navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 500px;
+    /* justify-content: space-between;
+    align-items: center; */
+    /* width: 500px; */
 
 }
 
@@ -67,14 +68,11 @@ nav {
     font-weight: bold;
     font-size: 24px;
     color: var(--blue);
+    margin-right: 100px;
 }
 
 .logo span {
     color: var(--black);
-}
-
-.nav-items {
-    width: 50%;
 }
 
 .nav-items {
@@ -112,6 +110,7 @@ nav {
 .contact-info li a{
     font-size: 14px;
     font-weight: 500;
+    color: var(--gray);
 }
 
 .contact-info li:last-child{
@@ -154,6 +153,7 @@ nav {
 
 .call-to-action:hover {
     box-shadow: none;
+    background-color: var(--active-blue);
 }
 
 .reasons {
@@ -265,13 +265,17 @@ nav {
 
 .projects {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+
 }
 
 .project-card {
-    margin-bottom: 30px;
     cursor: pointer;
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc(100% / 3 - 30px);
 }
 
 .project-content-wrapper {
@@ -305,6 +309,7 @@ footer {
     color: var(--blue);
     font-size: 24px;
     display: block;
+    margin-bottom: 10px;
 }
 
 .footer-content > a span {
